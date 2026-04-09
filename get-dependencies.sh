@@ -21,5 +21,5 @@ bsdtar -xvf ITR2025v1.6.zip --strip-components=1
 rm -f *.zip
 
 mkdir -p ./AppDir/bin
-sed -i 's|java -Xmx2048M -jar GCAP.jar|java -Xmx2048M -jar "$APPDIR/bin/GCAP.jar" "$@"|g' exec.sh
-mv -v exec.sh lib GCAP.jar GCAP.acb offline.png online.png pgd-updater.jar ./AppDir/bin
+sed -i 's|java -Xmx2048M -jar GCAP.jar|java -Xmx2048M -jar "$APPDIR/bin/pgditr.jar" "$@"|g' exec.sh
+mv -v exec.sh lib pgditr.jar RFB.png pgd-updater.jar ./AppDir/bin
