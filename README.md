@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/ITR2025-AppImage)](https://github.com/pkgforge-dev/ITR2025-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Link4Electronics/ITR2025-AppImage/refs/heads/main/AppDir/br.gov.fazenda.receita.gcap2026.png" width="128" />
+  <img src="https://raw.githubusercontent.com/Link4Electronics/ITR2025-AppImage/refs/heads/main/AppDir/br.gov.fazenda.receita.itr2025.png" width="128" />
 </p>
 
 
