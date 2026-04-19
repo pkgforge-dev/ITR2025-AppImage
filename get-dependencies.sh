@@ -16,8 +16,10 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package PACKAGENAME
 
 # If the application needs to be manually built that has to be done down here
-wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/1.6/ITR2025v1.6.zip
-bsdtar -xvf ITR2025v1.6.zip --strip-components=1
+VERSION=1.6
+echo "$VERSION" > ~/version
+wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/1.6/ITR2025v${VERSION}.zip
+bsdtar -xvf ITR2025v${VERSION}.zip --strip-components=1
 rm -f *.zip
 
 mkdir -p ./AppDir/bin
