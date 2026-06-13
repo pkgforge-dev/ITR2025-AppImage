@@ -18,7 +18,7 @@ get-debloated-pkgs --add-common --prefer-nano
 # If the application needs to be manually built that has to be done down here
 VERSION=1.7
 echo "$VERSION" > ~/version
-wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/1.6/ITR2025v${VERSION}.zip
+wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/${VERSION}/ITR2025v${VERSION}.zip
 bsdtar -xvf ITR2025v${VERSION}.zip --strip-components=1
 rm -f *.zip
 
