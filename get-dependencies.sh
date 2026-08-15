@@ -12,10 +12,8 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
-
-# If the application needs to be manually built that has to be done down here
+echo "Getting app..."
+echo "---------------------------------------------------------------"
 VERSION=1.7
 echo "$VERSION" > ~/version
 wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/${VERSION}/ITR2025v${VERSION}.zip
