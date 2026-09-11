@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm jre-openjdk openssl
+pacman -Syu --noconfirm jre11-openjdk openssl
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -14,7 +14,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 echo "Getting app..."
 echo "---------------------------------------------------------------"
-VERSION=1.7
+VERSION=1.8
 echo "$VERSION" > ~/version
 wget https://downloaditr.receita.fazenda.gov.br/2025/arquivos/${VERSION}/ITR2025v${VERSION}.zip
 bsdtar -xvf ITR2025v${VERSION}.zip --strip-components=1
